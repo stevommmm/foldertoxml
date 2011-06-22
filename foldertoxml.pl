@@ -20,13 +20,6 @@ FILESIZE:after { content:\" bytes\"; color:lightgray; }";
 close (CSS); 
  } 
 
-
-
-
-
-
-
-
 sub process_files {
     my $path = shift;
     opendir (DIR, $path)
@@ -41,7 +34,6 @@ sub process_files {
 		print XML "<FILE>\n";
 		#print XML "<FILENAME>$_</FILENAME>\n";
 		print XML "<FILENAME><xhtml:a href=\"$_\">$_</xhtml:a></FILENAME>\n";
-		
 		my $filesize = -s $_;
 		print XML "<FILESIZE>$filesize</FILESIZE>\n";
 		print XML "</FILE>\n";
