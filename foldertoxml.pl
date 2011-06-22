@@ -38,11 +38,13 @@ sub process_files {
         if (-d $_) {
             process_files ($_);
         } else { 
-		print XML "<FILE>\n";
-		print XML "<FILENAME><xhtml:a href=\"$_\">$_</xhtml:a></FILENAME>\n";
-		my $filesize = -s $_;
-		print XML "<FILESIZE>$filesize</FILESIZE>\n";
-		print XML "</FILE>\n";
+			if ($_ ne './files.xml' && $_ ne './style.css' && $_ ne './foldertoxml.pl'){
+				print XML "<FILE>\n";
+				print XML "<FILENAME><xhtml:a href=\"$_\">$_</xhtml:a></FILENAME>\n";
+				my $filesize = -s $_;
+				print XML "<FILESIZE>$filesize</FILESIZE>\n";
+				print XML "</FILE>\n";
+			}
         }
     }
 }
