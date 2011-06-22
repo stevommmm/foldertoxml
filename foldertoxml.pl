@@ -38,7 +38,7 @@ sub process_files {
         if (-d $_) {
             process_files ($_);
         } else { 
-			if ($_ ne './files.xml' && $_ ne './style.css' && $_ ne './foldertoxml.pl'){
+			if ((!/\/files.xml/) && (!/\/style.css/) && (!/\/foldertoxml.pl/)){
 				print XML "<FILE>\n";
 				print XML "<FILENAME><xhtml:a href=\"$_\">$_</xhtml:a></FILENAME>\n";
 				my $filesize = -s $_;
