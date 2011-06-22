@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<DIRECTORY xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<HEAD>DIRECTORY LISTING</HEAD>
+<FILE>
+<FILENAME><xhtml:a href="./foldertoxml.pl">./foldertoxml.pl</xhtml:a></FILENAME>
+<FILESIZE>1568</FILESIZE>
+</FILE>
+<FILE>
+<FILENAME><xhtml:a href="./files.xml">./files.xml</xhtml:a></FILENAME>
+<FILESIZE>0</FILESIZE>
+</FILE>
+</DIRECTORY>

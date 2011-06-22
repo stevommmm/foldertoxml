@@ -1,0 +1,7 @@
+DIRECTORY { background-color: #ffffff; margin:0 auto;	width:700px; padding-top:20px; }
+HEAD { color: gray; font-size: 16pt; text-align:center; padding:250px; }
+FILE { display: block; margin-bottom: 3pt; margin-left: 0; border-bottom:thin lightgray dashed; }
+FILENAME { color: gray; font-size: 16pt; }
+FILENAME a { color: gray; font-size: 16pt; text-decoration:none; }
+FILESIZE { color: dimgray; font-size: 12pt; float:right; }
+FILESIZE:after { content:" bytes"; color:lightgray; }
