@@ -1,4 +1,11 @@
 #!C:\Perl64\bin\perl.exe
+# Folder to XML
+# Usage: perl foldertoxml.pl
+# Prints a list of all files in the current directory and all subdirectories to a .xml file
+# Checks for a style.css to apply styling to the xml file (can be overwritten)
+# Links files to the xml output.
+# 
+# Stephen McGregor [stevommmm]
 open (XML, '> files.xml');
 print XML "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n";
 print XML "<?xml-stylesheet type=\"text/css\" href=\"style.css\"?>\n";
@@ -32,7 +39,6 @@ sub process_files {
             process_files ($_);
         } else { 
 		print XML "<FILE>\n";
-		#print XML "<FILENAME>$_</FILENAME>\n";
 		print XML "<FILENAME><xhtml:a href=\"$_\">$_</xhtml:a></FILENAME>\n";
 		my $filesize = -s $_;
 		print XML "<FILESIZE>$filesize</FILESIZE>\n";
