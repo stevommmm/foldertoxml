@@ -1,4 +1,4 @@
-#!C:\Perl64\bin\perl.exe
+#!/usr/bin/perl
 # Folder to XML
 # Usage: perl foldertoxml.pl
 # Prints a list of all files in the current directory and all subdirectories to a .xml file
